@@ -1,6 +1,6 @@
-To use MPS you need firtly import pytorch
-you can get v2.2.2 from pip and 2.4.1(with mps) from conda-forge
-or you can build by yourself -> see "Unlock x86 PyTorch 2.6.md"
+To use MPS you need firstly import pytorch
+you can get v2.2.2 from pip and 2.4.1(with mps) from conda-forge,
+or you can build by yourself -> see "[Unlock x86 PyTorch 2.6.md](Unlock x86 MPS.md)"
 
 ``` Python
 

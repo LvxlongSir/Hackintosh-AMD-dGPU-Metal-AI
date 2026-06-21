@@ -1,12 +1,12 @@
 # Hackintosh-AMD-dGPU-Metal-AI
-Yes, Verified successfully
-<img width="1639" height="620" alt="image" src="https://github.com/user-attachments/assets/ce7d1f9f-d3ff-46f0-b0ed-4996fa2aaff7" />
+Yes, Verified successfully on x86 macOS
+#### <img width="1639" height="620" alt="image" src="https://github.com/user-attachments/assets/ce7d1f9f-d3ff-46f0-b0ed-4996fa2aaff7" />
 
 
-#Pathway llama+GGML (others pls see following md docs)
-	Prefered macOS 15 (26 n't unlock airdrop with brocm), coffee/tea, midnight, mind, hand...
-
-AMD dGPU support Metal (mine is Radeon RX 6900XT)
+## Pathway llama.cpp + GGML_METAL (To use MPS pls see "[Unlock x86 MPS.md](Unlock x86 MPS.md)")
+Prerequisite
+	macOS (preferred 15) (26 can't unlock airdrop with brocm), mind, hands...
+	Metal Device - AMD dGPU supports Metal (mine is Radon RX 6900XT)
 
 	a4@iMac ~ % system_profiler SPDisplaysDataType | grep -i metal
 	      Metal Support: Metal 3
@@ -44,12 +44,32 @@ VVVery IMPORTANT for AMD dGPU
 
 	GGML_METAL_CONCURRENCY_DISABLE=1
 	othwise n't work
-	e.g. export GGML_METAL_CONCURRENCY_DISABLE=1
-
-	below to utilize perf
+	e.g. 
+```shell
+	export GGML_METAL_CONCURRENCY_DISABLE=1
+```
+	#below to utilize perf
 	export GGML_METAL_VRAM_RESERVE_MB=512
 	export GGML_METAL_FORCE_PRIVATE=1
 	export GGML_METAL_N_CB=2
+
+	fully list I'm using:
+```python
+	import os
+	#this is confined in .bash_profile and sourced into zsh as well
+	os.environ['TORCH_HOME'] = '/Volumes/SSD/TorchCache'
+	os.environ['HF_HOME'] = '/Volumes/SSD/ModelCache/huggingface'
+	os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
+	os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"
+	os.environ["PYTORCH_MPS_HIGH_WATERMARK_RATIO"] = "0.99"
+	os.environ["PYTORCH_MPS_LOW_WATERMARK_RATIO"] = "0.5"
+	os.environ["GGML_METAL_CONCURRENCY_DISABLE"] = "1"
+	os.environ["GGML_METAL_VRAM_RESERVE_MB"] = "512"
+	os.environ["GGML_METAL_FORCE_PRIVATE"] = "1"
+	os.environ["GGML_METAL_N_CB"] = "2"
+	os.environ["OMP_NUM_THREADS"] = "16"
+```
+
 
 Serve
 
