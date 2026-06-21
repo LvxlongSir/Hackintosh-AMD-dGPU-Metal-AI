@@ -3,9 +3,8 @@ Yes, Verified successfully
 <img width="1639" height="620" alt="image" src="https://github.com/user-attachments/assets/ce7d1f9f-d3ff-46f0-b0ed-4996fa2aaff7" />
 
 
-Pathway
-
-Prefered macOS 15 (26 n't unlock airdrop with brocm), coffee/tea, midnight, mind, hand...
+#Pathway llama+GGML (others pls see following md docs)
+	Prefered macOS 15 (26 n't unlock airdrop with brocm), coffee/tea, midnight, mind, hand...
 
 AMD dGPU support Metal (mine is Radeon RX 6900XT)
 
@@ -65,9 +64,9 @@ Webbrower/llama-ui(Chrome app)
 	
 	http://127.0.0.1:8080/
 
-Say sth, "Kindness multiplies when shared" 
-<img width="777" height="112" alt="image" src="https://github.com/user-attachments/assets/3ba55682-cd31-41f0-b043-a1d87685c0cf" />
-<img width="970" height="830" alt="image" src="https://github.com/user-attachments/assets/fcdcb20b-bfa5-4fd6-9e63-3a6ce9f2b6be" />
+	Say sth, "Kindness multiplies when shared" 
+	<img width="777" height="112" alt="image" src="https://github.com/user-attachments/assets/3ba55682-cd31-41f0-b043-a1d87685c0cf" />
+	<img width="970" height="830" alt="image" src="https://github.com/user-attachments/assets/fcdcb20b-bfa5-4fd6-9e63-3a6ce9f2b6be" />
 
 
 
