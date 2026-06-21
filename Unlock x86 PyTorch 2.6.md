@@ -4,7 +4,7 @@ I try to unlock ComfyUI for x86 macOS with AMD GPU
 So I target on Python 3.12
 Verified successfully to buid out pytorch torchvision @V2.6
   torch-2.6.0a0+git1eba9b3-cp312-cp312-macosx_15_0_x86_64.whl 
-
+```python
 #verified
 #diffusers import OK
 #torchvision: 0.21.0+7af6987
@@ -33,4 +33,4 @@ torchvision==0.21.0+7af6987 #Self-built
   #diffusers==0.27.0
   #transformers==4.44.0
   #huggingface_hub==0.24.0
-
+```python
