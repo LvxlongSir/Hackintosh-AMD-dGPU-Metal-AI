@@ -7,7 +7,7 @@ Pathway
 
 Prefered macOS 15 (26 n't unlock airdrop with brocm), coffee/tea, midnight, mind, hand...
 
-AMD dGPU support Metal (mine is RT 6900XT)
+AMD dGPU support Metal (mine is Radeon RX 6900XT)
 
 	a4@iMac ~ % system_profiler SPDisplaysDataType | grep -i metal
 	      Metal Support: Metal 3
