@@ -61,9 +61,12 @@ VVVery IMPORTANT for AMD dGPU
 	os.environ['HF_HOME'] = '/Volumes/SSD/ModelCache/huggingface'
 	os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
 	os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"
-	os.environ["PYTORCH_MPS_HIGH_WATERMARK_RATIO"] = "0.99"
+
+	#0.0 enable VRAM to RAM swap
+	os.environ["PYTORCH_MPS_HIGH_WATERMARK_RATIO"] = "0.0"
 	os.environ["PYTORCH_MPS_LOW_WATERMARK_RATIO"] = "0.5"
 	os.environ["GGML_METAL_CONCURRENCY_DISABLE"] = "1"
+	os.environ["GGML_METAL_DEVICE_INDEX"] = "1"
 	os.environ["GGML_METAL_VRAM_RESERVE_MB"] = "512"
 	os.environ["GGML_METAL_FORCE_PRIVATE"] = "1"
 	os.environ["GGML_METAL_N_CB"] = "2"
